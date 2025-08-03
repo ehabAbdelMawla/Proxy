@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const app = express();
 
-const targetUrl = "http://120.203.20.151:5000";
+const targetUrl = "ws://204.2.43.152:3000/websocket";
 app.use(
   "*",
   createProxyMiddleware({
